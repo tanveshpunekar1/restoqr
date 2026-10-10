@@ -1,0 +1,8 @@
+{
+  "name": "Remix RestoQR - Multi-Tenant Restaurant QR Ordering SaaS",
+  "description": "Production-ready multi-tenant restaurant and cafe QR code ordering platform with super admin, restaurant management, kitchen display system, live ordering, and customer table ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

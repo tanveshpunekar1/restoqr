@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remix RestoQR - Multi-Tenant Restaurant QR Ordering SaaS</title>
+    <meta name="description" content="Production-ready multi-tenant restaurant and cafe QR code ordering platform with super admin, restaurant management, kitchen display system, live ordering, and customer table ordering." />
+    <meta property="og:title" content="Remix RestoQR - Multi-Tenant Restaurant QR Ordering SaaS" />
+    <meta property="og:description" content="Production-ready multi-tenant restaurant and cafe QR code ordering platform with super admin, restaurant management, kitchen display system, live ordering, and customer table ordering." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      // Suppress harmless Vite HMR WebSocket errors in environments where HMR is disabled
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event && (event.reason ? String(event.reason.message || event.reason) : '');
+        if (reason.toLowerCase().includes('websocket')) {
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = event && (event.message ? String(event.message) : '');
+        if (msg.toLowerCase().includes('websocket')) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-orange-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
